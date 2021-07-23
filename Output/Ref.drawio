@@ -1,0 +1,1231 @@
+<mxfile compressed="false" host="Electron" modified="2021-07-23T12:42:37.025Z" agent="5.0 (Macintosh; Intel Mac OS X 11_4_0) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/14.6.13 Chrome/89.0.4389.128 Electron/12.0.7 Safari/537.36" version="14.6.13" etag="lDOTsnF-OBVEDYFm3D0m" type="device">
+  <diagram id="Top" name="Top">
+    <mxGraphModel dx="4653" dy="4480" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="1">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <object label="cmdDisp: Svc::CommandDispatcher" id="cmdDisp">
+          <mxCell style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+            <mxGeometry x="3514" y="3881" width="120" height="60" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="chanTlm: Svc::TlmChan" id="chanTlm">
+          <mxCell style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+            <mxGeometry x="3806" y="3852" width="120" height="60" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="prmDb: Svc::PrmDb" id="prmDb">
+          <mxCell style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+            <mxGeometry x="4097" y="3767" width="120" height="60" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="cmdSeq: Svc::CmdSequencer" id="cmdSeq">
+          <mxCell style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+            <mxGeometry x="4367" y="3628" width="120" height="60" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="eventLogger: Svc::ActiveLogger" id="eventLogger">
+          <mxCell style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+            <mxGeometry x="4605" y="3440" width="120" height="60" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="health: Svc::Health" id="health">
+          <mxCell style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+            <mxGeometry x="4804" y="3211" width="120" height="60" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="fileUplink: Svc::FileUplink" id="fileUplink">
+          <mxCell style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+            <mxGeometry x="4956" y="2948" width="120" height="60" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="fileUplinkBufferManager: Svc::BufferManager" id="fileUplinkBufferManager">
+          <mxCell style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+            <mxGeometry x="5061.000000000001" y="2661" width="120" height="60" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="fileDownlink: Svc::FileDownlink" id="fileDownlink">
+          <mxCell style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+            <mxGeometry x="5098" y="2361" width="120" height="60" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="fileManager: Svc::FileManager" id="fileManager">
+          <mxCell style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+            <mxGeometry x="5084" y="2057" width="120" height="60" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="textLogger: Svc::PassiveTextLogger" id="textLogger">
+          <mxCell style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+            <mxGeometry x="5015.999999999999" y="1762" width="120" height="60" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="fatalAdapter: Svc::AssertFatalAdapter" id="fatalAdapter">
+          <mxCell style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+            <mxGeometry x="4891" y="1486" width="120" height="60" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="fatalHandler: Svc::FatalHandler" id="fatalHandler">
+          <mxCell style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+            <mxGeometry x="4710" y="1239" width="120" height="60" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="linuxTime: Svc::Time" id="linuxTime">
+          <mxCell style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+            <mxGeometry x="4491" y="1030" width="120" height="60" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="staticMemory: Svc::StaticMemory" id="staticMemory">
+          <mxCell style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+            <mxGeometry x="4235" y="865" width="120" height="60" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="downlink: Svc::Framer" id="downlink">
+          <mxCell style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+            <mxGeometry x="3953" y="753" width="120" height="60" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="uplink: Svc::Deframer" id="uplink">
+          <mxCell style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+            <mxGeometry x="3655" y="695" width="120" height="60" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="mathSender: Asagumo::MathSender" id="mathSender">
+          <mxCell style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+            <mxGeometry x="3353.0000000000005" y="695" width="120" height="60" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="mathReceiver: Asagumo::MathReceiver" id="mathReceiver">
+          <mxCell style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+            <mxGeometry x="3060.0000000000005" y="753" width="120" height="60" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="comm: Drv::ByteStreamDriverModel" id="comm">
+          <mxCell style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+            <mxGeometry x="2788.0000000000005" y="865" width="120" height="60" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="rateGroupDriverComp: Svc::RateGroupDriver" id="rateGroupDriverComp">
+          <mxCell style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+            <mxGeometry x="2518.0000000000005" y="1030" width="120" height="60" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="rateGroup1Comp: Svc::ActiveRateGroup" id="rateGroup1Comp">
+          <mxCell style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+            <mxGeometry x="2297" y="1239" width="120" height="60" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="rateGroup2Comp: Svc::ActiveRateGroup" id="rateGroup2Comp">
+          <mxCell style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+            <mxGeometry x="2121" y="1486" width="120" height="60" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="rateGroup3Comp: Svc::ActiveRateGroup" id="rateGroup3Comp">
+          <mxCell style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+            <mxGeometry x="1995" y="1762" width="120" height="60" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="sendBuffComp: Asagumo::SendBuff" id="sendBuffComp">
+          <mxCell style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+            <mxGeometry x="1923" y="2057" width="120" height="60" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="recvBuffComp: Asagumo::RecvBuff" id="recvBuffComp">
+          <mxCell style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+            <mxGeometry x="1909" y="2361" width="120" height="60" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="pingRcvr: Asagumo::PingReceiver" id="pingRcvr">
+          <mxCell style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+            <mxGeometry x="1955.9999999999993" y="2661" width="120" height="60" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="SG1: Asagumo::SignalGen" id="SG1">
+          <mxCell style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+            <mxGeometry x="2051" y="2948" width="120" height="60" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="SG3: Asagumo::SignalGen" id="SG3">
+          <mxCell style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+            <mxGeometry x="2203" y="3211" width="120" height="60" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="SG2: Asagumo::SignalGen" id="SG2">
+          <mxCell style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+            <mxGeometry x="2402" y="3440" width="120" height="60" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="SG5: Asagumo::SignalGen" id="SG5">
+          <mxCell style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+            <mxGeometry x="2640" y="3628" width="120" height="60" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="SG4: Asagumo::SignalGen" id="SG4">
+          <mxCell style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+            <mxGeometry x="2910" y="3767" width="120" height="60" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="blockDrv: Drv::BlockDriver" id="blockDrv">
+          <mxCell style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+            <mxGeometry x="3201" y="3852" width="120" height="60" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="allocate -&gt; UplinkDrvAllocate -&gt; bufferAllocate" source="comm" target="staticMemory" id="383ac05aff5d53542c50672d0790afb6">
+          <mxCell style="endArrow=classic;noEdgeStyle=1;" parent="1" source="comm" target="staticMemory" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="recv -&gt; UplinkRecv -&gt; framedIn" source="comm" target="uplink" id="3b0000e46279f615c842e442ab32df36">
+          <mxCell style="endArrow=classic;noEdgeStyle=1;" parent="1" source="comm" target="uplink" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="framedDeallocate -&gt; UplinkDeallocate -&gt; bufferDeallocate" source="uplink" target="staticMemory" id="c07dfe6210019a17344740f7922036d5">
+          <mxCell style="endArrow=classic;noEdgeStyle=1;" parent="1" source="uplink" target="staticMemory" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="bufferAllocate -&gt; UplinkFileAllocate -&gt; bufferGetCallee" source="uplink" target="fileUplinkBufferManager" id="d515dbef6699c41866329cee5033c541">
+          <mxCell style="endArrow=classic;noEdgeStyle=1;" parent="1" source="uplink" target="fileUplinkBufferManager" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="comOut -&gt; UplinkCommands -&gt; seqCmdBuff" source="uplink" target="cmdDisp" id="e6fce0d3c12b7eba70fc2a21f5acaaaf">
+          <mxCell style="endArrow=classic;noEdgeStyle=1;" parent="1" source="uplink" target="cmdDisp" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="bufferOut -&gt; UplinkBuffers -&gt; bufferSendIn" source="uplink" target="fileUplink" id="ed776676f9cd40f7f756d89c97a764e4">
+          <mxCell style="endArrow=classic;noEdgeStyle=1;" parent="1" source="uplink" target="fileUplink" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="bufferDeallocate -&gt; UplinkFileAllocate -&gt; bufferSendIn" source="uplink" target="fileUplinkBufferManager" id="f15c277ee928a05081a461e9e1ca2b60">
+          <mxCell style="endArrow=classic;noEdgeStyle=1;" parent="1" source="uplink" target="fileUplinkBufferManager" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="bufferSendOut -&gt; fileUplinkBuffIn -&gt; bufferSendIn" source="fileUplink" target="fileUplinkBufferManager" id="4c5267d45630855c31d900d69c6b2bb2">
+          <mxCell style="endArrow=classic;noEdgeStyle=1;" parent="1" source="fileUplink" target="fileUplinkBufferManager" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="framedAllocate -&gt; DownlinkAllocate -&gt; bufferAllocate" source="downlink" target="staticMemory" id="0f23d85e625c54df2ff004b42dafa1db">
+          <mxCell style="endArrow=classic;noEdgeStyle=1;" parent="1" source="downlink" target="staticMemory" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="framedOut -&gt; DownlinkSend -&gt; send" source="downlink" target="comm" id="4634bba18f83ccfc9e2e45e1db5af0d2">
+          <mxCell style="endArrow=classic;noEdgeStyle=1;" parent="1" source="downlink" target="comm" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="deallocate -&gt; DownlinkDeallocate -&gt; bufferDeallocate" source="comm" target="staticMemory" id="0aab7376b660d93961c5ac913e10d3f8">
+          <mxCell style="endArrow=classic;noEdgeStyle=1;" parent="1" source="comm" target="staticMemory" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="PktSend -&gt; eventLoggerPkts -&gt; comIn" source="eventLogger" target="downlink" id="da0d72414564480d620434479296640c">
+          <mxCell style="endArrow=classic;noEdgeStyle=1;" parent="1" source="eventLogger" target="downlink" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="PktSend -&gt; chanTlmPkts -&gt; comIn" source="chanTlm" target="downlink" id="377f219e4a99b8e11c942601d5179c66">
+          <mxCell style="endArrow=classic;noEdgeStyle=1;" parent="1" source="chanTlm" target="downlink" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="bufferSendOut -&gt; fileDownlinkBufferSend -&gt; bufferIn" source="fileDownlink" target="downlink" id="470c3409d407736b1c160145a437661b">
+          <mxCell style="endArrow=classic;noEdgeStyle=1;" parent="1" source="fileDownlink" target="downlink" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="bufferDeallocate -&gt; fileDownlinkBufferReturn -&gt; bufferReturn" source="downlink" target="fileDownlink" id="66d4926d220dfd23604fc6cc69483cf6">
+          <mxCell style="endArrow=classic;noEdgeStyle=1;" parent="1" source="downlink" target="fileDownlink" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="CmdReg -&gt; EventLoggerReg -&gt; compCmdReg" source="eventLogger" target="cmdDisp" id="758fe41eda9f390c676a26e372cc7520">
+          <mxCell style="endArrow=classic;noEdgeStyle=1;" parent="1" source="eventLogger" target="cmdDisp" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="CmdReg -&gt; CmdDispReg -&gt; compCmdReg" source="cmdDisp" target="cmdDisp" id="67aeffe5e14c6c053572af70ac2ad944">
+          <mxCell style="endArrow=classic;noEdgeStyle=1;" parent="1" source="cmdDisp" target="cmdDisp" edge="1">
+            <mxGeometry relative="1" as="geometry">
+              <Array as="points" />
+            </mxGeometry>
+          </mxCell>
+        </object>
+        <object label="CmdReg -&gt; HealthReg -&gt; compCmdReg" source="health" target="cmdDisp" id="46e2d7749113009b08bfc88c29dd7d0e">
+          <mxCell style="endArrow=classic;noEdgeStyle=1;" parent="1" source="health" target="cmdDisp" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="CmdReg -&gt; PrmDbReg -&gt; compCmdReg" source="prmDb" target="cmdDisp" id="0a5c01b78b6248a1c4d4edd87852a5a8">
+          <mxCell style="endArrow=classic;noEdgeStyle=1;" parent="1" source="prmDb" target="cmdDisp" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="cmdRegOut -&gt; CmdSeqReg -&gt; compCmdReg" source="cmdSeq" target="cmdDisp" id="851b0d2557103637b9bacc7d0c7fc648">
+          <mxCell style="endArrow=classic;noEdgeStyle=1;" parent="1" source="cmdSeq" target="cmdDisp" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="cmdRegOut -&gt; FileDownlinkReg -&gt; compCmdReg" source="fileDownlink" target="cmdDisp" id="99545c2d524e797bea0e57599622212c">
+          <mxCell style="endArrow=classic;noEdgeStyle=1;" parent="1" source="fileDownlink" target="cmdDisp" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="CmdReg -&gt; SendBuffReg -&gt; compCmdReg" source="sendBuffComp" target="cmdDisp" id="8e3428801370bc5c8d09ccea508b680a">
+          <mxCell style="endArrow=classic;noEdgeStyle=1;" parent="1" source="sendBuffComp" target="cmdDisp" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="CmdReg -&gt; RecvBuffReg -&gt; compCmdReg" source="recvBuffComp" target="cmdDisp" id="86fde97d780c432d4c8f9f90f7ea8830">
+          <mxCell style="endArrow=classic;noEdgeStyle=1;" parent="1" source="recvBuffComp" target="cmdDisp" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="cmdRegOut -&gt; SG1Reg -&gt; compCmdReg" source="SG1" target="cmdDisp" id="56c6f4b59ee83048cdf10edea07eb97e">
+          <mxCell style="endArrow=classic;noEdgeStyle=1;" parent="1" source="SG1" target="cmdDisp" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="cmdRegOut -&gt; SG2Reg -&gt; compCmdReg" source="SG2" target="cmdDisp" id="8704d0df924c0c314128f888703b1e69">
+          <mxCell style="endArrow=classic;noEdgeStyle=1;" parent="1" source="SG2" target="cmdDisp" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="cmdRegOut -&gt; SG3Reg -&gt; compCmdReg" source="SG3" target="cmdDisp" id="e3e4285c3f88f9f209155d2fd41c1c98">
+          <mxCell style="endArrow=classic;noEdgeStyle=1;" parent="1" source="SG3" target="cmdDisp" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="cmdRegOut -&gt; SG4Reg -&gt; compCmdReg" source="SG4" target="cmdDisp" id="d0b1b9a8bcc067a584a558c8ed310e15">
+          <mxCell style="endArrow=classic;noEdgeStyle=1;" parent="1" source="SG4" target="cmdDisp" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="cmdRegOut -&gt; SG5Reg -&gt; compCmdReg" source="SG5" target="cmdDisp" id="0185fed9382cc272b7d28cac725900fd">
+          <mxCell style="endArrow=classic;noEdgeStyle=1;" parent="1" source="SG5" target="cmdDisp" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="CmdReg -&gt; PingRcvReg -&gt; compCmdReg" source="pingRcvr" target="cmdDisp" id="70594b67c943b0e940746602b0556dad">
+          <mxCell style="endArrow=classic;noEdgeStyle=1;" parent="1" source="pingRcvr" target="cmdDisp" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="cmdRegOut -&gt; FileManagerReg -&gt; compCmdReg" source="fileManager" target="cmdDisp" id="9e5d15d22b3d4e31979adbb67b6125ff">
+          <mxCell style="endArrow=classic;noEdgeStyle=1;" parent="1" source="fileManager" target="cmdDisp" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="compCmdSend -&gt; EventLoggerDisp -&gt; CmdDisp" source="cmdDisp" target="eventLogger" id="3c9831add612714989ac6f53ae55dbe5">
+          <mxCell style="endArrow=classic;noEdgeStyle=1;" parent="1" source="cmdDisp" target="eventLogger" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="compCmdSend -&gt; CmdDispDisp -&gt; CmdDisp" source="cmdDisp" target="cmdDisp" id="b6a50a2c89b9d04d61d5c66aa05d4c21">
+          <mxCell style="endArrow=classic;noEdgeStyle=1;" parent="1" source="cmdDisp" target="cmdDisp" edge="1">
+            <mxGeometry relative="1" as="geometry">
+              <Array as="points" />
+            </mxGeometry>
+          </mxCell>
+        </object>
+        <object label="compCmdSend -&gt; HealthDisp -&gt; CmdDisp" source="cmdDisp" target="health" id="4c2d54a81b7e6331402615ef62e47e46">
+          <mxCell style="endArrow=classic;noEdgeStyle=1;" parent="1" source="cmdDisp" target="health" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="compCmdSend -&gt; PrmDbDisp -&gt; CmdDisp" source="cmdDisp" target="prmDb" id="b7a05bba8bdd0a5fa08d70fa7e585553">
+          <mxCell style="endArrow=classic;noEdgeStyle=1;" parent="1" source="cmdDisp" target="prmDb" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="compCmdSend -&gt; CmdSeqDisp -&gt; cmdIn" source="cmdDisp" target="cmdSeq" id="7f8da1576489c2405f752395c8dbc311">
+          <mxCell style="endArrow=classic;noEdgeStyle=1;" parent="1" source="cmdDisp" target="cmdSeq" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="compCmdSend -&gt; FileDownlinkDisp -&gt; cmdIn" source="cmdDisp" target="fileDownlink" id="adf881f564cc2a929604ddd9f5966694">
+          <mxCell style="endArrow=classic;noEdgeStyle=1;" parent="1" source="cmdDisp" target="fileDownlink" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="compCmdSend -&gt; SendBuffDisp -&gt; CmdDisp" source="cmdDisp" target="sendBuffComp" id="40931762f541cf16464512600b81054a">
+          <mxCell style="endArrow=classic;noEdgeStyle=1;" parent="1" source="cmdDisp" target="sendBuffComp" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="compCmdSend -&gt; RecvBuffDisp -&gt; CmdDisp" source="cmdDisp" target="recvBuffComp" id="20746ab81135c3997a7cc4784c0f7659">
+          <mxCell style="endArrow=classic;noEdgeStyle=1;" parent="1" source="cmdDisp" target="recvBuffComp" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="compCmdSend -&gt; SG1Disp -&gt; cmdIn" source="cmdDisp" target="SG1" id="6e89f2eceebb7db03c2da615870ecbc8">
+          <mxCell style="endArrow=classic;noEdgeStyle=1;" parent="1" source="cmdDisp" target="SG1" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="compCmdSend -&gt; SG2Disp -&gt; cmdIn" source="cmdDisp" target="SG2" id="df253560e27e4a6fc1c5a9a66ae8163f">
+          <mxCell style="endArrow=classic;noEdgeStyle=1;" parent="1" source="cmdDisp" target="SG2" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="compCmdSend -&gt; SG3Disp -&gt; cmdIn" source="cmdDisp" target="SG3" id="7f8d1a568d99c6c144ad21e4e2b51d98">
+          <mxCell style="endArrow=classic;noEdgeStyle=1;" parent="1" source="cmdDisp" target="SG3" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="compCmdSend -&gt; SG4Disp -&gt; cmdIn" source="cmdDisp" target="SG4" id="54fcaeb205bbe611dd9a7a65ee0597ea">
+          <mxCell style="endArrow=classic;noEdgeStyle=1;" parent="1" source="cmdDisp" target="SG4" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="compCmdSend -&gt; SG5Disp -&gt; cmdIn" source="cmdDisp" target="SG5" id="bd19cd90886c33cecbba57d155bfc9d2">
+          <mxCell style="endArrow=classic;noEdgeStyle=1;" parent="1" source="cmdDisp" target="SG5" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="compCmdSend -&gt; PingRcvDisp -&gt; CmdDisp" source="cmdDisp" target="pingRcvr" id="870ce2834f9fedb875ab0a370efd786f">
+          <mxCell style="endArrow=classic;noEdgeStyle=1;" parent="1" source="cmdDisp" target="pingRcvr" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="compCmdSend -&gt; FileManagerDisp -&gt; cmdIn" source="cmdDisp" target="fileManager" id="5f3db72219605c4e5ff1762f3fd797df">
+          <mxCell style="endArrow=classic;noEdgeStyle=1;" parent="1" source="cmdDisp" target="fileManager" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="CmdStatus -&gt; EventLoggerReply -&gt; compCmdStat" source="eventLogger" target="cmdDisp" id="98bda93a5a8efe7091be0909350c1b44">
+          <mxCell style="endArrow=classic;noEdgeStyle=1;" parent="1" source="eventLogger" target="cmdDisp" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="cmdResponseOut -&gt; CmdSeqReply -&gt; compCmdStat" source="cmdSeq" target="cmdDisp" id="38d1874fd16d715a7a8865998e599dee">
+          <mxCell style="endArrow=classic;noEdgeStyle=1;" parent="1" source="cmdSeq" target="cmdDisp" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="CmdStatus -&gt; PrmDbReply -&gt; compCmdStat" source="prmDb" target="cmdDisp" id="6f34b39cc1e7c0bd8e075af432be1f74">
+          <mxCell style="endArrow=classic;noEdgeStyle=1;" parent="1" source="prmDb" target="cmdDisp" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="CmdStatus -&gt; CmdDispReply -&gt; compCmdStat" source="cmdDisp" target="cmdDisp" id="687619de724b8ff08142a994d29bc428">
+          <mxCell style="endArrow=classic;noEdgeStyle=1;" parent="1" source="cmdDisp" target="cmdDisp" edge="1">
+            <mxGeometry relative="1" as="geometry">
+              <Array as="points" />
+            </mxGeometry>
+          </mxCell>
+        </object>
+        <object label="CmdStatus -&gt; HealthReply -&gt; compCmdStat" source="health" target="cmdDisp" id="a41f795d8d6dfd250909309565220a6b">
+          <mxCell style="endArrow=classic;noEdgeStyle=1;" parent="1" source="health" target="cmdDisp" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="cmdResponseOut -&gt; FileDownlinkReply -&gt; compCmdStat" source="fileDownlink" target="cmdDisp" id="baa916d799c3ef46bb9d5a53f000a6c3">
+          <mxCell style="endArrow=classic;noEdgeStyle=1;" parent="1" source="fileDownlink" target="cmdDisp" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="cmdResponseOut -&gt; FileManagerReply -&gt; compCmdStat" source="fileManager" target="cmdDisp" id="a564cbb955aa41fc16eb47d8f188f365">
+          <mxCell style="endArrow=classic;noEdgeStyle=1;" parent="1" source="fileManager" target="cmdDisp" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="CmdStatus -&gt; PingRcvStat -&gt; compCmdStat" source="pingRcvr" target="cmdDisp" id="e1a9ddc9777180c17b4188179ba5a6e8">
+          <mxCell style="endArrow=classic;noEdgeStyle=1;" parent="1" source="pingRcvr" target="cmdDisp" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="CmdStatus -&gt; recvBuffStat -&gt; compCmdStat" source="recvBuffComp" target="cmdDisp" id="b21cc1936459ce09fbbeea7a82b185cb">
+          <mxCell style="endArrow=classic;noEdgeStyle=1;" parent="1" source="recvBuffComp" target="cmdDisp" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="CmdStatus -&gt; sendBuffStat -&gt; compCmdStat" source="sendBuffComp" target="cmdDisp" id="e0f5a4049ef300392e211e3c0b77b54c">
+          <mxCell style="endArrow=classic;noEdgeStyle=1;" parent="1" source="sendBuffComp" target="cmdDisp" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="cmdResponseOut -&gt; SG1Stat -&gt; compCmdStat" source="SG1" target="cmdDisp" id="5314b37951a4aad9852dc3266c33417e">
+          <mxCell style="endArrow=classic;noEdgeStyle=1;" parent="1" source="SG1" target="cmdDisp" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="cmdResponseOut -&gt; SG2Stat -&gt; compCmdStat" source="SG2" target="cmdDisp" id="2afb84b5571c6b73dcb280240bc57306">
+          <mxCell style="endArrow=classic;noEdgeStyle=1;" parent="1" source="SG2" target="cmdDisp" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="cmdResponseOut -&gt; SG3Stat -&gt; compCmdStat" source="SG3" target="cmdDisp" id="1333c9f08d63f9197113dddb676fa8b2">
+          <mxCell style="endArrow=classic;noEdgeStyle=1;" parent="1" source="SG3" target="cmdDisp" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="cmdResponseOut -&gt; SG4Stat -&gt; compCmdStat" source="SG4" target="cmdDisp" id="2e647974eb81dfbaa0c1cf70aa17bacb">
+          <mxCell style="endArrow=classic;noEdgeStyle=1;" parent="1" source="SG4" target="cmdDisp" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="cmdResponseOut -&gt; SG5Stat -&gt; compCmdStat" source="SG5" target="cmdDisp" id="60d1e24ee5876b53d9a4c8b13871727a">
+          <mxCell style="endArrow=classic;noEdgeStyle=1;" parent="1" source="SG5" target="cmdDisp" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="seqCmdStatus -&gt; SeqCompStatus -&gt; cmdResponseIn" source="cmdDisp" target="cmdSeq" id="8ac601f01729e4a57d8e7a8a11757cad">
+          <mxCell style="endArrow=classic;noEdgeStyle=1;" parent="1" source="cmdDisp" target="cmdSeq" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="comCmdOut -&gt; SeqCmdSend -&gt; seqCmdBuff" source="cmdSeq" target="cmdDisp" id="9a1779f8bd4a7547a59257569dee7065">
+          <mxCell style="endArrow=classic;noEdgeStyle=1;" parent="1" source="cmdSeq" target="cmdDisp" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="Log -&gt; PrmDbLog -&gt; LogRecv" source="prmDb" target="eventLogger" id="d5f5dfc07c6703907d0a289f8c5becd0">
+          <mxCell style="endArrow=classic;noEdgeStyle=1;" parent="1" source="prmDb" target="eventLogger" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="eventOut -&gt; FileUplinkLog -&gt; LogRecv" source="fileUplink" target="eventLogger" id="754819be35f5336e37cd5589b719a18b">
+          <mxCell style="endArrow=classic;noEdgeStyle=1;" parent="1" source="fileUplink" target="eventLogger" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="Log -&gt; EventLoggerLog -&gt; LogRecv" source="eventLogger" target="eventLogger" id="2f207a76ea22dee2a6aa8c4eee503eaf">
+          <mxCell style="endArrow=classic;noEdgeStyle=1;" parent="1" source="eventLogger" target="eventLogger" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="eventOut -&gt; FileUplinkBufferManagerLog -&gt; LogRecv" source="fileUplinkBufferManager" target="eventLogger" id="08c2b89f9d8a300a9cdd6d95aae9d753">
+          <mxCell style="endArrow=classic;noEdgeStyle=1;" parent="1" source="fileUplinkBufferManager" target="eventLogger" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="Log -&gt; CmdDispLog -&gt; LogRecv" source="cmdDisp" target="eventLogger" id="6d575819fba009a51d197a6cc5a5cbfc">
+          <mxCell style="endArrow=classic;noEdgeStyle=1;" parent="1" source="cmdDisp" target="eventLogger" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="logOut -&gt; CmdSeqLog -&gt; LogRecv" source="cmdSeq" target="eventLogger" id="dad767c01dc5e3bea175dd0dc384f9ce">
+          <mxCell style="endArrow=classic;noEdgeStyle=1;" parent="1" source="cmdSeq" target="eventLogger" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="Log -&gt; FatalAdapterLog -&gt; LogRecv" source="fatalAdapter" target="eventLogger" id="45800ff0a763c05b791fae03007e5d95">
+          <mxCell style="endArrow=classic;noEdgeStyle=1;" parent="1" source="fatalAdapter" target="eventLogger" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="Log -&gt; HealthLog -&gt; LogRecv" source="health" target="eventLogger" id="a56a9f606e9d87587026783a62e7e151">
+          <mxCell style="endArrow=classic;noEdgeStyle=1;" parent="1" source="health" target="eventLogger" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="eventOut -&gt; FileDownlinkLog -&gt; LogRecv" source="fileDownlink" target="eventLogger" id="fca9dc28bf6b7b5f5c1849d3c379bba9">
+          <mxCell style="endArrow=classic;noEdgeStyle=1;" parent="1" source="fileDownlink" target="eventLogger" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="eventOut -&gt; FileManagerLog -&gt; LogRecv" source="fileManager" target="eventLogger" id="051ed2bd19387e4e89494c4bad7a7e68">
+          <mxCell style="endArrow=classic;noEdgeStyle=1;" parent="1" source="fileManager" target="eventLogger" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="Log -&gt; RG1Ev -&gt; LogRecv" source="rateGroup1Comp" target="eventLogger" id="688a76ac1f5dc947f1c78bfd7a1b280e">
+          <mxCell style="endArrow=classic;noEdgeStyle=1;" parent="1" source="rateGroup1Comp" target="eventLogger" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="Log -&gt; RG2Ev -&gt; LogRecv" source="rateGroup2Comp" target="eventLogger" id="c72530ae4d5a606a0fdfafcb29145d36">
+          <mxCell style="endArrow=classic;noEdgeStyle=1;" parent="1" source="rateGroup2Comp" target="eventLogger" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="Log -&gt; RG3Ev -&gt; LogRecv" source="rateGroup3Comp" target="eventLogger" id="7d929d5cc41f23cf74079197f4902493">
+          <mxCell style="endArrow=classic;noEdgeStyle=1;" parent="1" source="rateGroup3Comp" target="eventLogger" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="Log -&gt; SendBuffEvent -&gt; LogRecv" source="sendBuffComp" target="eventLogger" id="f951097fcf43affa5364e9c3e933d3ca">
+          <mxCell style="endArrow=classic;noEdgeStyle=1;" parent="1" source="sendBuffComp" target="eventLogger" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="Log -&gt; RcvBuffEvent -&gt; LogRecv" source="recvBuffComp" target="eventLogger" id="3495cc2eb3d8e92901b7800706690cc9">
+          <mxCell style="endArrow=classic;noEdgeStyle=1;" parent="1" source="recvBuffComp" target="eventLogger" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="logOut -&gt; SG1Evt -&gt; LogRecv" source="SG1" target="eventLogger" id="f5346a23ee3ad31d01bbffaea1acc160">
+          <mxCell style="endArrow=classic;noEdgeStyle=1;" parent="1" source="SG1" target="eventLogger" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="logOut -&gt; SG2Evt -&gt; LogRecv" source="SG2" target="eventLogger" id="b1ac33d8b1763f9cc0ceaa64cb684f46">
+          <mxCell style="endArrow=classic;noEdgeStyle=1;" parent="1" source="SG2" target="eventLogger" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="logOut -&gt; SG3Evt -&gt; LogRecv" source="SG3" target="eventLogger" id="95f5007eea096b752942ed3a9e2964e5">
+          <mxCell style="endArrow=classic;noEdgeStyle=1;" parent="1" source="SG3" target="eventLogger" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="logOut -&gt; SG4Evt -&gt; LogRecv" source="SG4" target="eventLogger" id="623bd9a36001d67343bd59c2c2dcf029">
+          <mxCell style="endArrow=classic;noEdgeStyle=1;" parent="1" source="SG4" target="eventLogger" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="logOut -&gt; SG5Evt -&gt; LogRecv" source="SG5" target="eventLogger" id="15c06c0ca402f51df2400e3937ab7068">
+          <mxCell style="endArrow=classic;noEdgeStyle=1;" parent="1" source="SG5" target="eventLogger" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="Log -&gt; pingEvt -&gt; LogRecv" source="pingRcvr" target="eventLogger" id="e09670bfd9fc7646fc14bf7b8c77a019">
+          <mxCell style="endArrow=classic;noEdgeStyle=1;" parent="1" source="pingRcvr" target="eventLogger" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="LogText -&gt; CmdSeqTextLog -&gt; TextLogger" source="cmdSeq" target="textLogger" id="0abf67998a4da142242c814cd857b9ba">
+          <mxCell style="endArrow=classic;noEdgeStyle=1;" parent="1" source="cmdSeq" target="textLogger" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="LogText -&gt; EventLoggerTextLog -&gt; TextLogger" source="eventLogger" target="textLogger" id="da06594412cbef16ea3cc53ab49f309d">
+          <mxCell style="endArrow=classic;noEdgeStyle=1;" parent="1" source="eventLogger" target="textLogger" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="LogText -&gt; HealthTextLog -&gt; TextLogger" source="health" target="textLogger" id="b9ed692113d1ca27bcc75f20ec213041">
+          <mxCell style="endArrow=classic;noEdgeStyle=1;" parent="1" source="health" target="textLogger" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="LogText -&gt; FatalAdapterTextLog -&gt; TextLogger" source="fatalAdapter" target="textLogger" id="d114f07d054e465abb1006f3fff4e350">
+          <mxCell style="endArrow=classic;noEdgeStyle=1;" parent="1" source="fatalAdapter" target="textLogger" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="LogText -&gt; PrmDbTextLogger -&gt; TextLogger" source="prmDb" target="textLogger" id="3139e717391e2ed2fbe6438b8f223067">
+          <mxCell style="endArrow=classic;noEdgeStyle=1;" parent="1" source="prmDb" target="textLogger" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="LogText -&gt; CmdDispTextLogger -&gt; TextLogger" source="cmdDisp" target="textLogger" id="6fbefcfddd3effd68279839c74825d9f">
+          <mxCell style="endArrow=classic;noEdgeStyle=1;" parent="1" source="cmdDisp" target="textLogger" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="LogText -&gt; Rg1Text -&gt; TextLogger" source="rateGroup1Comp" target="textLogger" id="7e653a270a9e07d52512d87f8d42d822">
+          <mxCell style="endArrow=classic;noEdgeStyle=1;" parent="1" source="rateGroup1Comp" target="textLogger" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="LogText -&gt; Rg2Text -&gt; TextLogger" source="rateGroup2Comp" target="textLogger" id="7c75cccc459ef5a9e21de64574030668">
+          <mxCell style="endArrow=classic;noEdgeStyle=1;" parent="1" source="rateGroup2Comp" target="textLogger" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="LogText -&gt; Rg3Text -&gt; TextLogger" source="rateGroup3Comp" target="textLogger" id="2bbdc92e76429049e002f289958c23e1">
+          <mxCell style="endArrow=classic;noEdgeStyle=1;" parent="1" source="rateGroup3Comp" target="textLogger" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="LogText -&gt; PingText -&gt; TextLogger" source="pingRcvr" target="textLogger" id="ef12d57c76678bf65570df207f442386">
+          <mxCell style="endArrow=classic;noEdgeStyle=1;" parent="1" source="pingRcvr" target="textLogger" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="logTextOut -&gt; SG1Text -&gt; TextLogger" source="SG1" target="textLogger" id="bed61aef288e8a053131a281daddf873">
+          <mxCell style="endArrow=classic;noEdgeStyle=1;" parent="1" source="SG1" target="textLogger" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="logTextOut -&gt; SG2Text -&gt; TextLogger" source="SG2" target="textLogger" id="545e7e45308b65bfcb24fc11fc1bb226">
+          <mxCell style="endArrow=classic;noEdgeStyle=1;" parent="1" source="SG2" target="textLogger" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="logTextOut -&gt; SG3Text -&gt; TextLogger" source="SG3" target="textLogger" id="bbca38a152c5453231abfb4b7945fba4">
+          <mxCell style="endArrow=classic;noEdgeStyle=1;" parent="1" source="SG3" target="textLogger" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="logTextOut -&gt; SG4Text -&gt; TextLogger" source="SG4" target="textLogger" id="b6900db284ffe9b248d346860eb135fb">
+          <mxCell style="endArrow=classic;noEdgeStyle=1;" parent="1" source="SG4" target="textLogger" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="logTextOut -&gt; SG5Text -&gt; TextLogger" source="SG5" target="textLogger" id="f0ecd9f3cdd3be4d4a61be511753140a">
+          <mxCell style="endArrow=classic;noEdgeStyle=1;" parent="1" source="SG5" target="textLogger" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="LogText -&gt; sendBufText -&gt; TextLogger" source="sendBuffComp" target="textLogger" id="0aa85b6c714850394d8674188c67ed67">
+          <mxCell style="endArrow=classic;noEdgeStyle=1;" parent="1" source="sendBuffComp" target="textLogger" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="LogText -&gt; recvBufText -&gt; TextLogger" source="recvBuffComp" target="textLogger" id="187c43720bce4fe9ddb12ea39c6562f5">
+          <mxCell style="endArrow=classic;noEdgeStyle=1;" parent="1" source="recvBuffComp" target="textLogger" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="textEventOut -&gt; fileDownlinkText -&gt; TextLogger" source="fileDownlink" target="textLogger" id="35aefae8d4ca747042ef38587debd593">
+          <mxCell style="endArrow=classic;noEdgeStyle=1;" parent="1" source="fileDownlink" target="textLogger" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="tlmOut -&gt; fileDownlinkTlm -&gt; TlmRecv" source="fileDownlink" target="chanTlm" id="4837a561a01468c9c22f0bf3a9dcef50">
+          <mxCell style="endArrow=classic;noEdgeStyle=1;" parent="1" source="fileDownlink" target="chanTlm" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="tlmOut -&gt; FileUplinkBufferManagerTlm -&gt; TlmRecv" source="fileUplinkBufferManager" target="chanTlm" id="e7749c05b7ee775e102e391992ea5793">
+          <mxCell style="endArrow=classic;noEdgeStyle=1;" parent="1" source="fileUplinkBufferManager" target="chanTlm" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="tlmOut -&gt; FileUplinkTlm -&gt; TlmRecv" source="fileUplink" target="chanTlm" id="752ce25895884f0786144cdc3c89c2d0">
+          <mxCell style="endArrow=classic;noEdgeStyle=1;" parent="1" source="fileUplink" target="chanTlm" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="tlmOut -&gt; fileManagerTlm -&gt; TlmRecv" source="fileManager" target="chanTlm" id="bec5ea790899f6290f177d7df4a33718">
+          <mxCell style="endArrow=classic;noEdgeStyle=1;" parent="1" source="fileManager" target="chanTlm" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="tlmOut -&gt; cmdSeqTlm -&gt; TlmRecv" source="cmdSeq" target="chanTlm" id="a28402cd02fe4904dbec74eeee513164">
+          <mxCell style="endArrow=classic;noEdgeStyle=1;" parent="1" source="cmdSeq" target="chanTlm" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="Tlm -&gt; cmdDispTlm -&gt; TlmRecv" source="cmdDisp" target="chanTlm" id="cc46d9ba21602801845e4d7d77918edd">
+          <mxCell style="endArrow=classic;noEdgeStyle=1;" parent="1" source="cmdDisp" target="chanTlm" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="Tlm -&gt; Rg1Tlm -&gt; TlmRecv" source="rateGroup1Comp" target="chanTlm" id="3826a6f35e4a8fadcd9bdd5d456d9a42">
+          <mxCell style="endArrow=classic;noEdgeStyle=1;" parent="1" source="rateGroup1Comp" target="chanTlm" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="Tlm -&gt; Rg2Tlm -&gt; TlmRecv" source="rateGroup2Comp" target="chanTlm" id="f1c16bba7a8151bed9934a4d903206e9">
+          <mxCell style="endArrow=classic;noEdgeStyle=1;" parent="1" source="rateGroup2Comp" target="chanTlm" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="Tlm -&gt; Rg3Tlm -&gt; TlmRecv" source="rateGroup3Comp" target="chanTlm" id="8848ee3c995bf5a67e2bf9bf7068d341">
+          <mxCell style="endArrow=classic;noEdgeStyle=1;" parent="1" source="rateGroup3Comp" target="chanTlm" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="Tlm -&gt; healthTlm -&gt; TlmRecv" source="health" target="chanTlm" id="9f63434b841401fcf9ec3c6dbf8f0df7">
+          <mxCell style="endArrow=classic;noEdgeStyle=1;" parent="1" source="health" target="chanTlm" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="tlmOut -&gt; SG1Tlm -&gt; TlmRecv" source="SG1" target="chanTlm" id="64f08d4d5fff0b69d9c56cd73f4f1a57">
+          <mxCell style="endArrow=classic;noEdgeStyle=1;" parent="1" source="SG1" target="chanTlm" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="tlmOut -&gt; SG2Tlm -&gt; TlmRecv" source="SG2" target="chanTlm" id="cb6635bfe25e4399484dcf330b270cdf">
+          <mxCell style="endArrow=classic;noEdgeStyle=1;" parent="1" source="SG2" target="chanTlm" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="tlmOut -&gt; SG3Tlm -&gt; TlmRecv" source="SG3" target="chanTlm" id="2f50e820dbdf65b61210b663f87ab274">
+          <mxCell style="endArrow=classic;noEdgeStyle=1;" parent="1" source="SG3" target="chanTlm" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="tlmOut -&gt; SG4Tlm -&gt; TlmRecv" source="SG4" target="chanTlm" id="4e8141fd12dc8a3268c8c434a76ee030">
+          <mxCell style="endArrow=classic;noEdgeStyle=1;" parent="1" source="SG4" target="chanTlm" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="tlmOut -&gt; SG5Tlm -&gt; TlmRecv" source="SG5" target="chanTlm" id="1a4a7e2ce15703765b763b2ca0ff3a43">
+          <mxCell style="endArrow=classic;noEdgeStyle=1;" parent="1" source="SG5" target="chanTlm" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="Tlm -&gt; pingTlm -&gt; TlmRecv" source="pingRcvr" target="chanTlm" id="bfb068b7564ad01bc6018b499cc97772">
+          <mxCell style="endArrow=classic;noEdgeStyle=1;" parent="1" source="pingRcvr" target="chanTlm" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="Tlm -&gt; sendBufTlm -&gt; TlmRecv" source="sendBuffComp" target="chanTlm" id="26dca59889d2768a35fc2c47efc33fa3">
+          <mxCell style="endArrow=classic;noEdgeStyle=1;" parent="1" source="sendBuffComp" target="chanTlm" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="Tlm -&gt; recvBufTlm -&gt; TlmRecv" source="recvBuffComp" target="chanTlm" id="4eb0fc430322ebad324532255c6b84bb">
+          <mxCell style="endArrow=classic;noEdgeStyle=1;" parent="1" source="recvBuffComp" target="chanTlm" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="Tlm -&gt; blockDrvTlm -&gt; TlmRecv" source="blockDrv" target="chanTlm" id="0c67cc51b3f7819fc2213aa98d44ef0f">
+          <mxCell style="endArrow=classic;noEdgeStyle=1;" parent="1" source="blockDrv" target="chanTlm" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="ParamGet -&gt; RecvBuffPrmGet -&gt; getPrm" source="recvBuffComp" target="prmDb" id="964a2039a4e224d1e3b3dd9807cb8d03">
+          <mxCell style="endArrow=classic;noEdgeStyle=1;" parent="1" source="recvBuffComp" target="prmDb" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="ParamGet -&gt; SendBuffPrmGet -&gt; getPrm" source="sendBuffComp" target="prmDb" id="a07034350bfa8e199ec0ccfdaeacf5e6">
+          <mxCell style="endArrow=classic;noEdgeStyle=1;" parent="1" source="sendBuffComp" target="prmDb" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="ParamSet -&gt; RecvBuffPrmSet -&gt; setPrm" source="recvBuffComp" target="prmDb" id="086d428818605d0a786921c5b7ba9046">
+          <mxCell style="endArrow=classic;noEdgeStyle=1;" parent="1" source="recvBuffComp" target="prmDb" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="ParamSet -&gt; SendBuffPrmSet -&gt; setPrm" source="sendBuffComp" target="prmDb" id="846458eaf8816c6db22c41f2d1d21410">
+          <mxCell style="endArrow=classic;noEdgeStyle=1;" parent="1" source="sendBuffComp" target="prmDb" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="Time -&gt; prmDbTime -&gt; timeGetPort" source="prmDb" target="linuxTime" id="f3ad5a521c0e59143bd25ba93d9d51d2">
+          <mxCell style="endArrow=classic;noEdgeStyle=1;" parent="1" source="prmDb" target="linuxTime" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="Time -&gt; eventLoggerTime -&gt; timeGetPort" source="eventLogger" target="linuxTime" id="50ac79675f38c2a6afe9641b23f8607a">
+          <mxCell style="endArrow=classic;noEdgeStyle=1;" parent="1" source="eventLogger" target="linuxTime" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="Time -&gt; rg1Time -&gt; timeGetPort" source="rateGroup1Comp" target="linuxTime" id="b3360f82cf8b1ab8fc4d805d0f6c56a0">
+          <mxCell style="endArrow=classic;noEdgeStyle=1;" parent="1" source="rateGroup1Comp" target="linuxTime" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="Time -&gt; rg2Time -&gt; timeGetPort" source="rateGroup2Comp" target="linuxTime" id="ca615221994010eaf41d26f184525888">
+          <mxCell style="endArrow=classic;noEdgeStyle=1;" parent="1" source="rateGroup2Comp" target="linuxTime" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="Time -&gt; rg3Time -&gt; timeGetPort" source="rateGroup3Comp" target="linuxTime" id="e5b6f42a11288e22648fe550b84eb2c9">
+          <mxCell style="endArrow=classic;noEdgeStyle=1;" parent="1" source="rateGroup3Comp" target="linuxTime" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="timeCaller -&gt; cmdSeqTime -&gt; timeGetPort" source="cmdSeq" target="linuxTime" id="731da94f4041998edf82dbd66ff6e610">
+          <mxCell style="endArrow=classic;noEdgeStyle=1;" parent="1" source="cmdSeq" target="linuxTime" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="Time -&gt; healthTime -&gt; timeGetPort" source="health" target="linuxTime" id="47a0ae2e22766e1684c14f2f263880db">
+          <mxCell style="endArrow=classic;noEdgeStyle=1;" parent="1" source="health" target="linuxTime" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="timeCaller -&gt; fileUplinkBufferManagerTime -&gt; timeGetPort" source="fileUplinkBufferManager" target="linuxTime" id="8f1e5c5e1ad62ef757706ea78b4a0f57">
+          <mxCell style="endArrow=classic;noEdgeStyle=1;" parent="1" source="fileUplinkBufferManager" target="linuxTime" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="Time -&gt; cmdDispTime -&gt; timeGetPort" source="cmdDisp" target="linuxTime" id="529e6c6af0a09be37bed0f29a712e0d8">
+          <mxCell style="endArrow=classic;noEdgeStyle=1;" parent="1" source="cmdDisp" target="linuxTime" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="timeCaller -&gt; fileUplinkTime -&gt; timeGetPort" source="fileUplink" target="linuxTime" id="03b599af884cb924c1a8a3211b44cdfc">
+          <mxCell style="endArrow=classic;noEdgeStyle=1;" parent="1" source="fileUplink" target="linuxTime" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="timeCaller -&gt; fileDownlinkTmp -&gt; timeGetPort" source="fileDownlink" target="linuxTime" id="68b4f47d40d2bc931be0fe4b5d468c67">
+          <mxCell style="endArrow=classic;noEdgeStyle=1;" parent="1" source="fileDownlink" target="linuxTime" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="timeCaller -&gt; fileManagerTime -&gt; timeGetPort" source="fileManager" target="linuxTime" id="1711b99115cc9748126c6faf7d95f042">
+          <mxCell style="endArrow=classic;noEdgeStyle=1;" parent="1" source="fileManager" target="linuxTime" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="Time -&gt; fatalAdapterTime -&gt; timeGetPort" source="fatalAdapter" target="linuxTime" id="5eabd1d7cda09248c19271e62cec4c75">
+          <mxCell style="endArrow=classic;noEdgeStyle=1;" parent="1" source="fatalAdapter" target="linuxTime" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="Time -&gt; recvBuffTime -&gt; timeGetPort" source="recvBuffComp" target="linuxTime" id="7c0b6ae18fed00698cfdb53c3588b861">
+          <mxCell style="endArrow=classic;noEdgeStyle=1;" parent="1" source="recvBuffComp" target="linuxTime" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="timeCaller -&gt; SG1Time -&gt; timeGetPort" source="SG1" target="linuxTime" id="6d90c2d5a1dfae86c97fbdff4a09ac5c">
+          <mxCell style="endArrow=classic;noEdgeStyle=1;" parent="1" source="SG1" target="linuxTime" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="timeCaller -&gt; SG2Time -&gt; timeGetPort" source="SG2" target="linuxTime" id="2248f9f75150b1f5d685ba277052094b">
+          <mxCell style="endArrow=classic;noEdgeStyle=1;" parent="1" source="SG2" target="linuxTime" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="timeCaller -&gt; SG3Time -&gt; timeGetPort" source="SG3" target="linuxTime" id="b2dc79021970b672e5c32cc5c8aa60c8">
+          <mxCell style="endArrow=classic;noEdgeStyle=1;" parent="1" source="SG3" target="linuxTime" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="timeCaller -&gt; SG4Time -&gt; timeGetPort" source="SG4" target="linuxTime" id="c98c53424e1503c6430f2900d50aefbd">
+          <mxCell style="endArrow=classic;noEdgeStyle=1;" parent="1" source="SG4" target="linuxTime" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="timeCaller -&gt; SG5Time -&gt; timeGetPort" source="SG5" target="linuxTime" id="853653b27af4f56cfcb6b66c11b560b2">
+          <mxCell style="endArrow=classic;noEdgeStyle=1;" parent="1" source="SG5" target="linuxTime" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="Time -&gt; SendBuffTime -&gt; timeGetPort" source="sendBuffComp" target="linuxTime" id="0179ba06d81e8e22f37b5bed1d5ab0a6">
+          <mxCell style="endArrow=classic;noEdgeStyle=1;" parent="1" source="sendBuffComp" target="linuxTime" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="Time -&gt; pingTime -&gt; timeGetPort" source="pingRcvr" target="linuxTime" id="ef66a41f5e88b384dca78da7f5e027a7">
+          <mxCell style="endArrow=classic;noEdgeStyle=1;" parent="1" source="pingRcvr" target="linuxTime" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="Time -&gt; blockDrvTime -&gt; timeGetPort" source="blockDrv" target="linuxTime" id="ca1d4fdd6022d154eeb8b032e346a792">
+          <mxCell style="endArrow=classic;noEdgeStyle=1;" parent="1" source="blockDrv" target="linuxTime" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="CycleOut -&gt; BlkDrvClock -&gt; CycleIn" source="blockDrv" target="rateGroupDriverComp" id="294b4f225407277fd0c021749306f44c">
+          <mxCell style="endArrow=classic;noEdgeStyle=1;" parent="1" source="blockDrv" target="rateGroupDriverComp" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="CycleOut -&gt; rateGroup1DriverComp -&gt; CycleIn" source="rateGroupDriverComp" target="rateGroup1Comp" id="cdf9beb461b7e3ec048c0dd62db1f3d2">
+          <mxCell style="endArrow=classic;noEdgeStyle=1;" parent="1" source="rateGroupDriverComp" target="rateGroup1Comp" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="RateGroupMemberOut -&gt; Rg1Sg1 -&gt; schedIn" source="rateGroup1Comp" target="SG1" id="5e1db0bdddf5bd04bd06f38c047dbef0">
+          <mxCell style="endArrow=classic;noEdgeStyle=1;" parent="1" source="rateGroup1Comp" target="SG1" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="RateGroupMemberOut -&gt; Rg1Sg2 -&gt; schedIn" source="rateGroup1Comp" target="SG2" id="3300771a6d5b04f13f0c1c35e1012962">
+          <mxCell style="endArrow=classic;noEdgeStyle=1;" parent="1" source="rateGroup1Comp" target="SG2" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="RateGroupMemberOut -&gt; Rg1ChTlm -&gt; Run" source="rateGroup1Comp" target="chanTlm" id="48ed8618bdfdb7194dd7e20c5e07e322">
+          <mxCell style="endArrow=classic;noEdgeStyle=1;" parent="1" source="rateGroup1Comp" target="chanTlm" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="RateGroupMemberOut -&gt; Rg1FileDown -&gt; Run" source="rateGroup1Comp" target="fileDownlink" id="39d127506f34eb857b9853a489ced53d">
+          <mxCell style="endArrow=classic;noEdgeStyle=1;" parent="1" source="rateGroup1Comp" target="fileDownlink" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="CycleOut -&gt; Rg2Drv -&gt; CycleIn" source="rateGroupDriverComp" target="rateGroup2Comp" id="184d9ad6086b930d0521711641a704f3">
+          <mxCell style="endArrow=classic;noEdgeStyle=1;" parent="1" source="rateGroupDriverComp" target="rateGroup2Comp" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="RateGroupMemberOut -&gt; Rg2Seq -&gt; schedIn" source="rateGroup2Comp" target="cmdSeq" id="165ddd05c0e882c478427a7a680576ba">
+          <mxCell style="endArrow=classic;noEdgeStyle=1;" parent="1" source="rateGroup2Comp" target="cmdSeq" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="RateGroupMemberOut -&gt; Rg2SendBuff -&gt; SchedIn" source="rateGroup2Comp" target="sendBuffComp" id="23d9a75fc1d9f9c345bc111bc42ce41a">
+          <mxCell style="endArrow=classic;noEdgeStyle=1;" parent="1" source="rateGroup2Comp" target="sendBuffComp" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="RateGroupMemberOut -&gt; Rg2Sg3 -&gt; schedIn" source="rateGroup2Comp" target="SG3" id="a1ad31f387a507e98823a13b878d9291">
+          <mxCell style="endArrow=classic;noEdgeStyle=1;" parent="1" source="rateGroup2Comp" target="SG3" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="RateGroupMemberOut -&gt; Rg2Sg4 -&gt; schedIn" source="rateGroup2Comp" target="SG4" id="f5abb8de24371a1b7c74ff803888f3c6">
+          <mxCell style="endArrow=classic;noEdgeStyle=1;" parent="1" source="rateGroup2Comp" target="SG4" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="CycleOut -&gt; rateGroup3DriverComp -&gt; CycleIn" source="rateGroupDriverComp" target="rateGroup3Comp" id="1815518e6a00c6ee1a7333cb17ceeef2">
+          <mxCell style="endArrow=classic;noEdgeStyle=1;" parent="1" source="rateGroupDriverComp" target="rateGroup3Comp" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="RateGroupMemberOut -&gt; Rg3Health -&gt; Run" source="rateGroup3Comp" target="health" id="9a67abde6194fdfbb29284f105dd4237">
+          <mxCell style="endArrow=classic;noEdgeStyle=1;" parent="1" source="rateGroup3Comp" target="health" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="RateGroupMemberOut -&gt; Rg3Sg5 -&gt; schedIn" source="rateGroup3Comp" target="SG5" id="253a6291b40a4032fb11a57054455451">
+          <mxCell style="endArrow=classic;noEdgeStyle=1;" parent="1" source="rateGroup3Comp" target="SG5" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="RateGroupMemberOut -&gt; Rg3BlkDrv -&gt; Sched" source="rateGroup3Comp" target="blockDrv" id="a9bc92658d6819293ca7bf318f82e561">
+          <mxCell style="endArrow=classic;noEdgeStyle=1;" parent="1" source="rateGroup3Comp" target="blockDrv" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="RateGroupMemberOut -&gt; Rg3UpBuffMan -&gt; schedIn" source="rateGroup3Comp" target="fileUplinkBufferManager" id="81d3f42d67633945bdcb2bc20cc89bc9">
+          <mxCell style="endArrow=classic;noEdgeStyle=1;" parent="1" source="rateGroup3Comp" target="fileUplinkBufferManager" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="PingOut -&gt; Rg1PingSend -&gt; PingReturn" source="rateGroup1Comp" target="health" id="18e9cd59aab45e8cae09a26eceba0ffc">
+          <mxCell style="endArrow=classic;noEdgeStyle=1;" parent="1" source="rateGroup1Comp" target="health" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="PingSend -&gt; Rg1PingRecv -&gt; PingIn" source="health" target="rateGroup1Comp" id="0795f71d98c6ea673fbdd8787cf51b08">
+          <mxCell style="endArrow=classic;noEdgeStyle=1;" parent="1" source="health" target="rateGroup1Comp" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="PingSend -&gt; Rg2PingSend -&gt; PingIn" source="health" target="rateGroup2Comp" id="913388edb67628d7645dcc1ef0534ad1">
+          <mxCell style="endArrow=classic;noEdgeStyle=1;" parent="1" source="health" target="rateGroup2Comp" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="PingOut -&gt; Rg2PingRecv -&gt; PingReturn" source="rateGroup2Comp" target="health" id="6c077cceb0e61c3b553c4b3381ab27d6">
+          <mxCell style="endArrow=classic;noEdgeStyle=1;" parent="1" source="rateGroup2Comp" target="health" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="PingSend -&gt; Rg3PingSend -&gt; PingIn" source="health" target="rateGroup3Comp" id="5180e4db0b26913e3753a01db46a1b42">
+          <mxCell style="endArrow=classic;noEdgeStyle=1;" parent="1" source="health" target="rateGroup3Comp" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="PingOut -&gt; Rg3PingRecv -&gt; PingReturn" source="rateGroup3Comp" target="health" id="3bf282faa4e39a1df79161ed148051b9">
+          <mxCell style="endArrow=classic;noEdgeStyle=1;" parent="1" source="rateGroup3Comp" target="health" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="PingSend -&gt; cmdDispPingIn -&gt; pingIn" source="health" target="cmdDisp" id="baa1c3faa034a18399dca3fd7d9258bd">
+          <mxCell style="endArrow=classic;noEdgeStyle=1;" parent="1" source="health" target="cmdDisp" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="pingOut -&gt; cmdDispPingRecv -&gt; PingReturn" source="cmdDisp" target="health" id="de93ca28a4e7660f668242dc5ec2d484">
+          <mxCell style="endArrow=classic;noEdgeStyle=1;" parent="1" source="cmdDisp" target="health" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="PingSend -&gt; eventLoggerPingSend -&gt; pingIn" source="health" target="eventLogger" id="8bc52464424bd0b5da84cce9150dfe4b">
+          <mxCell style="endArrow=classic;noEdgeStyle=1;" parent="1" source="health" target="eventLogger" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="pingOut -&gt; eventLoggerPingRecv -&gt; PingReturn" source="eventLogger" target="health" id="7e8a83f10eccaaac0276406042683602">
+          <mxCell style="endArrow=classic;noEdgeStyle=1;" parent="1" source="eventLogger" target="health" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="PingSend -&gt; cmdSeqPingSend -&gt; pingIn" source="health" target="cmdSeq" id="9bd521865230e2f5991aecdf5ccdc22f">
+          <mxCell style="endArrow=classic;noEdgeStyle=1;" parent="1" source="health" target="cmdSeq" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="pingOut -&gt; cmdSeqPingRecv -&gt; PingReturn" source="cmdSeq" target="health" id="73a6e1a4cb3443f655100922e0d9a0f3">
+          <mxCell style="endArrow=classic;noEdgeStyle=1;" parent="1" source="cmdSeq" target="health" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="PingSend -&gt; chanTlmPingSend -&gt; pingIn" source="health" target="chanTlm" id="258309cdaf743c533b2213d9b3990035">
+          <mxCell style="endArrow=classic;noEdgeStyle=1;" parent="1" source="health" target="chanTlm" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="pingOut -&gt; chanTlmPingRecv -&gt; PingReturn" source="chanTlm" target="health" id="0aeafa73e8678e4f4f55238f2abec4b0">
+          <mxCell style="endArrow=classic;noEdgeStyle=1;" parent="1" source="chanTlm" target="health" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="PingSend -&gt; prmDbPingSend -&gt; pingIn" source="health" target="prmDb" id="605f9ce2a563cfda647442e8ddaf6f39">
+          <mxCell style="endArrow=classic;noEdgeStyle=1;" parent="1" source="health" target="prmDb" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="pingOut -&gt; prmDbPingRecv -&gt; PingReturn" source="prmDb" target="health" id="64e4c40d97d0af921cd5b803e4dcce26">
+          <mxCell style="endArrow=classic;noEdgeStyle=1;" parent="1" source="prmDb" target="health" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="PingSend -&gt; fileUplinkPingSend -&gt; pingIn" source="health" target="fileUplink" id="82b5be77563f387801be076b5bc0c4cb">
+          <mxCell style="endArrow=classic;noEdgeStyle=1;" parent="1" source="health" target="fileUplink" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="pingOut -&gt; fileUplinkPingRecv -&gt; PingReturn" source="fileUplink" target="health" id="22fa81b65f5e02f8b8f567b2c96b2d34">
+          <mxCell style="endArrow=classic;noEdgeStyle=1;" parent="1" source="fileUplink" target="health" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="PingSend -&gt; fileDownlinkPingSend -&gt; pingIn" source="health" target="fileDownlink" id="9add342bb153eebe8d19c6073601e175">
+          <mxCell style="endArrow=classic;noEdgeStyle=1;" parent="1" source="health" target="fileDownlink" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="pingOut -&gt; fileDownlinkPingRecv -&gt; PingReturn" source="fileDownlink" target="health" id="84ab8cfe8a5ba1def9cbdd034991e92a">
+          <mxCell style="endArrow=classic;noEdgeStyle=1;" parent="1" source="fileDownlink" target="health" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="PingSend -&gt; PingRcvPingRecv -&gt; PingIn" source="health" target="pingRcvr" id="0c2b7597ba27640ea2135cf10b190d00">
+          <mxCell style="endArrow=classic;noEdgeStyle=1;" parent="1" source="health" target="pingRcvr" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="PingOut -&gt; PingRcvPingSend -&gt; PingReturn" source="pingRcvr" target="health" id="75e3e1cd51205e80ffe7d89ac5785e4e">
+          <mxCell style="endArrow=classic;noEdgeStyle=1;" parent="1" source="pingRcvr" target="health" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="PingSend -&gt; blockDrvPingSend -&gt; PingIn" source="health" target="blockDrv" id="6d34370f72ddb9c5d707f96c18aa90e0">
+          <mxCell style="endArrow=classic;noEdgeStyle=1;" parent="1" source="health" target="blockDrv" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="PingOut -&gt; blockDrvPingRecv -&gt; PingReturn" source="blockDrv" target="health" id="292033027d621ddf76e980eaba432636">
+          <mxCell style="endArrow=classic;noEdgeStyle=1;" parent="1" source="blockDrv" target="health" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="PingSend -&gt; fileManagerPingSend -&gt; pingIn" source="health" target="fileManager" id="ff4dc4f0ef377e6d4c6daa2a8291a70e">
+          <mxCell style="endArrow=classic;noEdgeStyle=1;" parent="1" source="health" target="fileManager" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="pingOut -&gt; fileManagerPingRecv -&gt; PingReturn" source="fileManager" target="health" id="6a6027bfaaa34a241e00b78dcd5894d7">
+          <mxCell style="endArrow=classic;noEdgeStyle=1;" parent="1" source="fileManager" target="health" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="FatalAnnounce -&gt; eventLoggerFatalOut -&gt; FatalReceive" source="eventLogger" target="fatalHandler" id="6dd711a296c486fe9e5213161399822d">
+          <mxCell style="endArrow=classic;noEdgeStyle=1;" parent="1" source="eventLogger" target="fatalHandler" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="Data -&gt; SendBuffDrv -&gt; BufferIn" source="sendBuffComp" target="blockDrv" id="c54fa668217eead949ba40e9d8fc30cb">
+          <mxCell style="endArrow=classic;noEdgeStyle=1;" parent="1" source="sendBuffComp" target="blockDrv" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="BufferOut -&gt; RecvBuffDrv -&gt; Data" source="blockDrv" target="recvBuffComp" id="1b05d0d14bb1d33bcd30449018c3175a">
+          <mxCell style="endArrow=classic;noEdgeStyle=1;" parent="1" source="blockDrv" target="recvBuffComp" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="CmdReg -&gt; MathSenderReg -&gt; compCmdReg" source="mathSender" target="cmdDisp" id="0d61121b8838576f0095fa47153f5b35">
+          <mxCell style="endArrow=classic;noEdgeStyle=1;" parent="1" source="mathSender" target="cmdDisp" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="CmdReg -&gt; MathReceiverReg -&gt; compCmdReg" source="mathReceiver" target="cmdDisp" id="184e31d6e8147910d8d183af6fd11754">
+          <mxCell style="endArrow=classic;noEdgeStyle=1;" parent="1" source="mathReceiver" target="cmdDisp" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="compCmdSend -&gt; MathSenderDisp -&gt; CmdDisp" source="cmdDisp" target="mathSender" id="ae10b3f4d86fc1271916badaca19396c">
+          <mxCell style="endArrow=classic;noEdgeStyle=1;" parent="1" source="cmdDisp" target="mathSender" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="compCmdSend -&gt; MathReceiverDisp -&gt; CmdDisp" source="cmdDisp" target="mathReceiver" id="c052b523ed7dddfcd4206833873f3f23">
+          <mxCell style="endArrow=classic;noEdgeStyle=1;" parent="1" source="cmdDisp" target="mathReceiver" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="CmdStatus -&gt; MathSenderReply -&gt; compCmdStat" source="mathSender" target="cmdDisp" id="7893f6078b0ee0ef002370bb0132d9a4">
+          <mxCell style="endArrow=classic;noEdgeStyle=1;" parent="1" source="mathSender" target="cmdDisp" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="CmdStatus -&gt; MathReceiverReply -&gt; compCmdStat" source="mathReceiver" target="cmdDisp" id="9f1e5d3d9585d993ef7d4e62bba804dc">
+          <mxCell style="endArrow=classic;noEdgeStyle=1;" parent="1" source="mathReceiver" target="cmdDisp" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="Log -&gt; MathSenderLog -&gt; LogRecv" source="mathSender" target="eventLogger" id="5a4a09e02d8b5125ed91041a5735b615">
+          <mxCell style="endArrow=classic;noEdgeStyle=1;" parent="1" source="mathSender" target="eventLogger" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="Log -&gt; MathReceiverLog -&gt; LogRecv" source="mathReceiver" target="eventLogger" id="317317e7030be8e96971450e7468aadb">
+          <mxCell style="endArrow=classic;noEdgeStyle=1;" parent="1" source="mathReceiver" target="eventLogger" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="LogText -&gt; MathSenderTextLog -&gt; TextLogger" source="mathSender" target="textLogger" id="740cf6063948fa3eb18c31a9bb1cdbad">
+          <mxCell style="endArrow=classic;noEdgeStyle=1;" parent="1" source="mathSender" target="textLogger" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="LogText -&gt; MathReceiverTextLog -&gt; TextLogger" source="mathReceiver" target="textLogger" id="03401be15f160c2b64c1c8b14dbea527">
+          <mxCell style="endArrow=classic;noEdgeStyle=1;" parent="1" source="mathReceiver" target="textLogger" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="Tlm -&gt; MathSenderTextTlm -&gt; TlmRecv" source="mathSender" target="chanTlm" id="d1c7ce9732c862e11df126271787187f">
+          <mxCell style="endArrow=classic;noEdgeStyle=1;" parent="1" source="mathSender" target="chanTlm" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="Tlm -&gt; MathReceiverTextTlm -&gt; TlmRecv" source="mathReceiver" target="chanTlm" id="2b6e8f0ca5b3a94aaaccce3297b60028">
+          <mxCell style="endArrow=classic;noEdgeStyle=1;" parent="1" source="mathReceiver" target="chanTlm" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="ParamGet -&gt; MathReceiverPrmGet -&gt; getPrm" source="mathReceiver" target="prmDb" id="ef1a1761ca54ce07438eafac8e59290c">
+          <mxCell style="endArrow=classic;noEdgeStyle=1;" parent="1" source="mathReceiver" target="prmDb" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="ParamSet -&gt; MathReceiverPrmSet -&gt; setPrm" source="mathReceiver" target="prmDb" id="abc7c71245d6b405f85c0198a0e3e632">
+          <mxCell style="endArrow=classic;noEdgeStyle=1;" parent="1" source="mathReceiver" target="prmDb" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="Time -&gt; MathSenderTime -&gt; timeGetPort" source="mathSender" target="linuxTime" id="792ef92cfafa4dff2d44674efa40d515">
+          <mxCell style="endArrow=classic;noEdgeStyle=1;" parent="1" source="mathSender" target="linuxTime" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="Time -&gt; MathReceiverTime -&gt; timeGetPort" source="mathReceiver" target="linuxTime" id="d7c3f7e853b5194b9633f864ede60eb3">
+          <mxCell style="endArrow=classic;noEdgeStyle=1;" parent="1" source="mathReceiver" target="linuxTime" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="RateGroupMemberOut -&gt; MathReceiverRG -&gt; SchedIn" source="rateGroup1Comp" target="mathReceiver" id="eb4f51b02d9306cf68e8e900b62e21b7">
+          <mxCell style="endArrow=classic;noEdgeStyle=1;" parent="1" source="rateGroup1Comp" target="mathReceiver" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="mathOut -&gt; MathOpConnection -&gt; mathIn" source="mathSender" target="mathReceiver" id="7fd0b5ea37e3665e98b25c4dae8901ab">
+          <mxCell style="endArrow=classic;noEdgeStyle=1;" parent="1" source="mathSender" target="mathReceiver" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="mathOut -&gt; MathResultConnection -&gt; mathIn" source="mathReceiver" target="mathSender" id="475002affa505a0ff0e006e924273ee8">
+          <mxCell style="endArrow=classic;noEdgeStyle=1;" parent="1" source="mathReceiver" target="mathSender" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
