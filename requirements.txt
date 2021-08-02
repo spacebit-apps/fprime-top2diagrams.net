@@ -1,3 +1,4 @@
 git+ssh://git@github.com/dmulyalin/N2G.git
 openpyxl
 python-igraph
+ttp
