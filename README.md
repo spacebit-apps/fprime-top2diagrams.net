@@ -24,7 +24,8 @@ Feel free to create issues, pull reguests and discussions.
 
 5. To view generated *.drawio file please use [Desktop Diagrams.net](https://github.com/jgraph/drawio-desktop/)releases] application.
 
-6. Improved layouting can be done via Diagrams.net application menu: Arrange -> Layout
+6. Layouting can be done via Diagrams.net application menu: Arrange -> Layout. According to out observations the most useful layout is Horizontal layout. ![Layout](./docs/draw_io_layout.png)
+
 
 ## Example
 
